@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array program</title>
+</head>
+<body>
+    <script>
+        //Array joining 
+        function arrayjoin(){
+            let arr=[10,20,30,40,50];
+            console.log(arr.join('|'));
+        }
+        arrayjoin();
+        //Array splitting
+        function arraysplit(){
+            let array="apple,orange,mango,pineapple";
+            let array1=array.split(",");
+            document.write(array1,"<br>");
+        }
+        arraysplit();
+        //Array manipulation with slice
+        let things=["pen","pencil","earser"];
+        let item=things.slice(0,2);
+        document.write(item,"<br>");
+        //Flattening arrays
+        const arrayflat = [[11,22],[33,44]];
+        const newArray = arrayflat.flat();
+        document.write(newArray,"<br>");
+        //Array deduplication
+        let arrayduplicate = ["pencil", "pen", "eraser","pen", "ruler", "pen"];
+        function removeDuplicates(array) {
+        return array.filter((item,index) => array.indexOf(item) === index);
+        }
+        document.write(removeDuplicates(arrayduplicate,"<br>"));
+    </script>
+</body>
+</html>
